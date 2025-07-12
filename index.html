@@ -1427,7 +1427,7 @@
                         date: today,
                         status: '상담대기',
                         memo: '오후 3시 이후 통화 가능',
-                        manager: '상현'
+                        manager: '세민'
                     },
                     {
                         id: 2,
@@ -1453,7 +1453,7 @@
                         date: today,
                         status: '❤️승인완료❤️',
                         memo: '승인 완료됨',
-                        manager: '상현'
+                        manager: '세민'
                     }
                 ];
                 console.log('📊 샘플 데이터 로드 완료');
@@ -2100,8 +2100,9 @@
                 <select class="manager-select text-sm text-gray-700" 
                         onchange="changeManagerDirect(${globalIndex}, this.value)">
                     <option value="" ${!consultation.manager ? 'selected' : ''}>미지정</option>
-                    <option value="상현" ${consultation.manager === '상현' ? 'selected' : ''}>상현</option>
-                    <option value="민성" ${consultation.manager === '민성' ? 'selected' : ''}>민성</option>
+                    <option value="승남" ${consultation.manager === '승남' ? 'selected' : ''}>승남</option>
+                    <option value="세민" ${consultation.manager === '세민' ? 'selected' : ''}>세민</option>
+                    <option value="재종" ${consultation.manager === '재종' ? 'selected' : ''}>재종</option>
                 </select>
             </td>
             <td class="text-sm text-gray-700">${consultation.date}</td>
