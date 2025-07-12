@@ -15,14 +15,14 @@
         
         // Firebase 설정 (실제 설정으로 업데이트됨)
         const firebaseConfig = {
-            apiKey: "AIzaSyDkwYnI7Lp4qGZSyrVFdVqpiaTEvixnqYY",
-            authDomain: "bestroncompany.firebaseapp.com",
-            projectId: "bestroncompany",
-            storageBucket: "bestroncompany.firebasestorage.app",
-            messagingSenderId: "279464057042",
-            appId: "1:279464057042:web:71d1c39a852ef31de7f50b",
-            measurementId: "G-ERXFT62XQ"
-        };
+    apiKey: "AIzaSyD9GXicl54nHqQdEMpaAyAWdy29aAbXUwA",
+    authDomain: "mtowncompany.firebaseapp.com",
+    projectId: "mtowncompany",
+    storageBucket: "mtowncompany.firebasestorage.app",
+    messagingSenderId: "644496180697",
+    appId: "1:644496180697:web:1e09f9beb9e9cc44c445c8",
+    measurementId: "G-8FPN389HW0"
+};
 
         // Firebase 앱 초기화
         const app = initializeApp(firebaseConfig);
@@ -1165,7 +1165,7 @@
                     const now = Date.now();
                     
                     // 세션 타임아웃 체크
-                    if (now - loginData.timestamp > this.sessionTimeout) {
+                     if (now - loginData.timestamp > this.sessionTimeout) {
                         this.clearLoginState();
                         return false;
                     }
