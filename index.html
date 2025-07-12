@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>베스트론 - 클라우드 공유</title>
+    <title>엠타론 - </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     
@@ -583,7 +583,7 @@
     <div id="loginScreen" class="login-bg flex items-center justify-center">
         <div class="glass-card rounded-2xl p-8 w-full max-w-md mobile-login-form">
             <div class="text-center mb-8">
-                <h1 class="text-4xl font-bold logo-text mb-2">베스트론</h1>
+                <h1 class="text-4xl font-bold logo-text mb-2">엠타론</h1>
                 <p class="text-gray-600">실시간 클라우드 공유</p>
             </div>
 
@@ -613,7 +613,7 @@
             <div class="glass-card rounded-2xl p-5 mb-5 animate-fade-in">
                 <div class="flex flex-col md:flex-row items-center justify-between">
                     <div class="mb-4 md:mb-0">
-                        <h1 class="text-2xl font-bold text-gray-900 mb-1">베스트론</h1>
+                        <h1 class="text-2xl font-bold text-gray-900 mb-1">엠타론</h1>
                         <p class="text-sm text-gray-600">실시간 클라우드 동기화</p>
                     </div>
                     <div class="w-full md:w-auto">
@@ -1644,7 +1644,7 @@
             // 로그인 상태 확인
             checkLoginState();
             
-            console.log('🚀 베스트론 실시간 클라우드 시스템 시작');
+            console.log('🚀 엠타론 실시간 클라우드 시스템 시작');
         });
 
         // 페이지 로드 시 새로고침 상태 확인
@@ -1690,7 +1690,7 @@
             const id = document.getElementById('loginId').value;
             const password = document.getElementById('loginPassword').value;
 
-            if (id === 'best101' && password === 'best101') {
+            if (id === 'mtown96' && password === '1234') {
                 // 로그인 상태 저장
                 loginManager.setLoginState(true);
                 
@@ -1958,7 +1958,7 @@
 
             XLSX.utils.book_append_sheet(wb, ws, '상담데이터');
             
-            const fileName = `베스트론_백업_${new Date().toISOString().split('T')[0].replace(/-/g, '')}.xlsx`;
+            const fileName = `엠타론_백업_${new Date().toISOString().split('T')[0].replace(/-/g, '')}.xlsx`;
             XLSX.writeFile(wb, fileName);
             
             alert('Excel 백업 파일이 다운로드되었습니다.');
